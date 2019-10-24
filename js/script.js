@@ -2,11 +2,20 @@ $( "document" ).ready(function() { //this helps your jQuery to work. Write all o
 
 $("#button").click(function(){
    var inputtext = $(".input").val();
-   alert(inputtext);
-}
+   console.log(inputtext.charAt(0));
+    var vowels =["a","e","i","o","u"]
 
 
+    let firstCharIndex = vowels.indexOf(inputtext.charAt(0))
+    // First character is a consonant
+    if (firstCharIndex === -1){
 
+    }
+    // First character is a vowel
+    else {
+        $(".output").text(inputtext+"ay")
+  }
 
+});
 
 });
