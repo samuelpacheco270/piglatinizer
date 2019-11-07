@@ -9,7 +9,8 @@ $("#button").click(function(){
     let firstCharIndex = vowels.indexOf(inputtext.charAt(0))
     // First character is a consonant
     if (firstCharIndex === -1){
-
+      var consonent = inputtext.slice(1)
+      $(".output").text(consonent+inputtext.charAt(0)+"ay")
     }
     // First character is a vowel
     else {
